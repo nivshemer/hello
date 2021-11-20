@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Get parent directory of script
 SCRIPT_PATH="$(cd $(dirname ${0}) && pwd)"
 
 FILE="${SCRIPT_PATH}/test.txt"
