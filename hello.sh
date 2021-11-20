@@ -10,10 +10,21 @@ write_to_file () {
 	echo "${text}" > ${DEST}
 }
 
+sleep_forever () {
+	echo "Running forever ..."
+	while :
+        do
+        	sleep 1
+        done
+}
 
 main () {
 	echo "Writing hello to ${FILE}"
 	write_to_file "hello" "${FILE}"
+	echo "cat'ing  ${FILE}"
+	cat  ${FILE}
+
+	sleep_forever
 
 }
 
