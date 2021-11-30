@@ -1,9 +1,10 @@
 #!/bin/sh
 
+# Get parent directory of script
 SCRIPT_PATH="$(cd $(dirname ${0}) && pwd)"
 
 FILE="${SCRIPT_PATH}/test.txt"
-# This function wites the message to a file passed as the second argument
+# This function writes the message to a file passed as the second argument
 write_to_file () {
 	local text="${1}"
 	local DEST="${2}"
