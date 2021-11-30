@@ -1,5 +1,5 @@
 FROM alpine:3.14
 
-COPY hello.sh /root/hello.sh
+COPY hello.sh /data/test/hello.sh
 
-ENTRYPOINT ["/root/hello.sh"]
+ENTRYPOINT ["/data/test/hello.sh"]
